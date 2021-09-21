@@ -1,0 +1,24 @@
+GNOME
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr gnome xorg xorg-server dhcpcd dhcp networkmanager os-prober ttf-roboto noto-fonts
+systemctl enable gdm.service
+
+
+XFCE
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr xfce4 xfce4-goodies xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+
+Cinnamon
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr cinnamon gnome-terminal xorg xorg-server dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ttf-roboto noto-fonts [gtk-engine-murrine]
+systemctl enable lightdm
+
+KDE
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr plasma kde-applications sddm xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober
+systemctl enable sddm
+
+mkdir /boot/efi
+mount /dev/sda1 /boot/efi
+grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi
+grub-mkconfig -o /boot/grub/grub.cfg
+systemctl enable NetworkManager.service
+
+
+https://www.vultr.com/docs/create-a-sudo-user-on-arch-linux
