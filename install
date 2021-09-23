@@ -1,5 +1,5 @@
 GNOME
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr gnome xorg xorg-server dhcpcd dhcp networkmanager os-prober ttf-roboto noto-fonts
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr gnome gdb xorg xorg-server dhcpcd dhcp networkmanager os-prober ttf-roboto noto-fonts
 systemctl enable gdm.service
 
 
