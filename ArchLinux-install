@@ -1,7 +1,6 @@
 GNOME
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr gnome gdm xorg xorg-server dhcpcd dhcp networkmanager os-prober ttf-roboto noto-fonts
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr gnome gdm xorg xorg-server dhcpcd dhcp networkmanager os-prober noto-fonts which sudo iwd strace gdb valgrind tilda gcc emacs-nox
 systemctl enable gdm.service
-
 
 XFCE
 base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr xfce4 xfce4-goodies xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
