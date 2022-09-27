@@ -3,7 +3,8 @@ base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo 
 systemctl enable gdm.service
 
 XFCE
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr xfce4 xfce4-goodies xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
+base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr xfce4 xfce4-goodies xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings wpa_supplicant wireless_tools nm-connection-editor network-manager-applet
+systemctl enable lightdm
 
 Cinnamon
 base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr cinnamon gnome-terminal xorg xorg-server dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ttf-roboto noto-fonts [gtk-engine-murrine]
