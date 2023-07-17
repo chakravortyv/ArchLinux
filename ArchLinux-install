@@ -1,17 +1,17 @@
 GNOME
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr gnome gdm xorg xorg-server dhcpcd dhcp networkmanager os-prober noto-fonts which sudo iwd strace gdb valgrind tilda gcc emacs-nox
+base base-devel linux-lts linux-firmware linux-lts-headers linux-lts-docs man-db man-pages texinfo vim grub sudo efibootmgr gnome gdm xorg xorg-server dhcpcd dhcp networkmanager os-prober noto-fonts which sudo iwd strace gdb valgrind tilda gcc emacs-nox
 systemctl enable gdm.service
 
 XFCE
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr xfce4 xfce4-goodies xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings wpa_supplicant wireless_tools nm-connection-editor network-manager-applet
+base base-devel linux-lts linux-firmware linux-lts-headers linux-lts-docs man-db man-pages texinfo vim grub sudo efibootmgr xfce4 xfce4-goodies xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings wpa_supplicant wireless_tools nm-connection-editor network-manager-applet
 systemctl enable lightdm
 
 Cinnamon
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr cinnamon gnome-terminal xorg xorg-server dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ttf-roboto noto-fonts [gtk-engine-murrine]
+base base-devel linux-lts linux-firmware linux-lts-headers linux-lts-docs man-db man-pages texinfo vim grub sudo efibootmgr cinnamon gnome-terminal xorg xorg-server dhcpcd dhcp networkmanager os-prober lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings ttf-roboto noto-fonts [gtk-engine-murrine]
 systemctl enable lightdm
 
 KDE
-base base-devel linux-lts linux-firmware man-db man-pages texinfo vim grub sudo efibootmgr plasma kde-applications sddm xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober
+base base-devel linux-lts linux-firmware linux-lts-headers linux-lts-docs man-db man-pages texinfo vim grub sudo efibootmgr plasma kde-applications sddm xorg xorg-server iwd dhcpcd dhcp networkmanager os-prober
 systemctl enable sddm
 
 mkdir /boot/efi
